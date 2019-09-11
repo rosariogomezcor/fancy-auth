@@ -1,0 +1,19 @@
+{
+  "name": "fancy-auth",
+  "version": "1.0.0",
+  "description": "Simple but fancy auth app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosariogomezcor/fancy-auth.git"
+  },
+  "author": "rosario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosariogomezcor/fancy-auth/issues"
+  },
+  "homepage": "https://github.com/rosariogomezcor/fancy-auth#readme"
+}
