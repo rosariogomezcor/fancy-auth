@@ -1,2 +1,2 @@
 # fancy-auth
-Simple but fancy auth app 
+Simple but fancy auth app with passport package
