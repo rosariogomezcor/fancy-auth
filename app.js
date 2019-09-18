@@ -34,6 +34,12 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());  
 passport.deserializeUser(User.deserializeUser()); 
 
+//Middleware to pass to all routes the current logged in user
+app.use(function(req, res, next) {
+	res.locals.currentUser = req.user; 
+	next(); 
+}); 
+
 // =========================================================================================
 //                                   ROUTES
 // =========================================================================================
@@ -91,9 +97,8 @@ app.get("/logout", function(req, res) {
 function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next(); 
-	} else {
-		res.redirect("/login"); 
-	}
+	}  
+	res.redirect("/login"); 
 }
 
 // =========================================================================================

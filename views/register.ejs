@@ -7,7 +7,12 @@
 </form>
 
 
-<a href="/login">Login!</a><br>
-<a href="/">Back</a>
+<% if (!currentUser) { %>
+	<li><a href="/register">Sign Up!</a></li>
+	<li><a href="/login">Login!</a></li>
+<% } else { %>
+	<li><a href="/logout">Logout!</a></li>
+	<p>Signed in as <%= currentUser.username %></p>
+<% } %>
 
 
