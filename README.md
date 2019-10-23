@@ -1,2 +1,2 @@
 # fancy-auth
-Simple but fancy auth app with passport package
+Simple but fancy auth app in Node.js  with Passport package. 
